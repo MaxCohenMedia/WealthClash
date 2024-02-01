@@ -1,0 +1,2 @@
+# WealthClash
+Competitive Finance App
