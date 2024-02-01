@@ -1,10 +1,10 @@
 # WealthClash Landing Page
 
-![WealthClash](https://github.com/MaxCohenMedia/WealthClash/assets/153024659/15c7bb88-f20d-4740-a3a0-0bfbcb34f0b1)
+![WealthClash icon](https://github.com/MaxCohenMedia/WealthClash/assets/153024659/29d20d42-889c-481b-8dd9-98d5b067676f)
 
 **Status: Under Construction 🚧**
 
-Welcome to the WealthClash Landing Page repository. WealthClash is an innovative web platform designed to gamify personal finance and investment. Our platform is currently under development, and this repository hosts the landing page, which offers a glimpse into our exciting features and future offerings.
+Welcome to the WealthClash Landing Page repository. WealthClash is an innovative web platform designed to gamify personal finance and investing. Our platform is currently under development, and this repository hosts the landing page, which offers a glimpse into our exciting features and future offerings.
 
 ## About WealthClash
 
