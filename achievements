@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WealthClash - Achievements</title>
+    <link rel="stylesheet" href="achievements.css">
+</head>
+<body>
+    <header>
+        <!-- Navigation and logo here -->
+    </header>
+
+    <main>
+        <h1>Achievements</h1>
+        <p>Unlock your financial potential by reaching new milestones. Each achievement brings you closer to financial mastery.</p>
+        
+        <!-- Out of the Negatives -->
+        <section class="achievement-category">
+            <h2>Out of the Negatives</h2>
+            <p>Start your journey by moving from debt to positive net worth.</p>
+            <ul class="achievement-list">
+                <li><strong>Positive Equity:</strong> Achieve a net worth of $0 and step into the realm of positive equity.</li>
+            </ul>
+        </section>
+        
+        <!-- Nest Egg Achievements -->
+        <section class="achievement-category">
+            <h2>Nest Egg</h2>
+            <p>Build your nest egg incrementally and watch your savings grow.</p>
+            <ul class="achievement-list">
+                <li><strong>Nest Egg I:</strong> Save your first $1,000.</li>
+                <!-- Add more nest egg achievements here -->
+            </ul>
+        </section>
+        
+        <!-- Dividend Hero Achievements -->
+        <section class="achievement-category">
+            <h2>Dividend Hero</h2>
+            <p>Invest in dividend-paying assets and earn passive income.</p>
+            <ul class="achievement-list">
+                <li><strong>Dividend Hero I:</strong> Earn $1/month in dividends.</li>
+                <!-- Add more dividend hero achievements here -->
+            </ul>
+        </section>
+        
+        <!-- Other achievement categories -->
+        <!-- ... -->
+        
+    </main>
+
+    <footer>
+        <!-- Footer content here -->
+    </footer>
+</body>
+</html>
