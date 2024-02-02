@@ -37,3 +37,9 @@ main {
 footer {
     /* footer styles */
 }
+
+#logo {
+    max-width: 100%; /* This ensures the logo is never wider than its container */
+    height: auto; /* This keeps the aspect ratio of the logo */
+    max-height: 96px; /* Adjust this value to fit your design needs */
+}
