@@ -1,6 +1,6 @@
 # WealthClash Landing Page
 
-![WealthClash icon](https://github.com/MaxCohenMedia/WealthClash/assets/153024659/29d20d42-889c-481b-8dd9-98d5b067676f)
+![WealthClash icon](![WealthClash Icon Small](https://github.com/MaxCohenMedia/WealthClash/assets/153024659/46acdee6-0248-4be3-8678-e84726cc0537))
 
 **Status: Under Construction 🚧**
 
