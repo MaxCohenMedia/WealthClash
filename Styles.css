@@ -6,7 +6,6 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background: #333;
@@ -17,6 +16,11 @@ header img {
     max-width: 96px; /* Adjust this value to fit your design needs */
     height: auto; /* This keeps the aspect ratio of the logo */
     margin-right: 20px; /* Added margin for spacing */
+}
+
+header .header-content {
+    display: flex;
+    align-items: center;
 }
 
 header p {
