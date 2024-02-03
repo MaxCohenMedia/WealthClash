@@ -78,13 +78,15 @@ body {
 
 .cta-button {
     display: inline-block;
-    padding: 10px 20px;
+    padding: 5px 10px; /* Adjust padding to make the buttons smaller */
     margin-top: 20px;
     background: gold;
     color: #333;
     text-decoration: none;
     border-radius: 5px;
+    font-size: 14px; /* Adjust font size to make the text smaller */
 }
+
 
 section {
     padding: 2rem;
