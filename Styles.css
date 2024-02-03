@@ -28,10 +28,13 @@ header p {
     font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
+nav {
+    margin-left: auto; /* Right-align the navigation */
+}
+
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: auto; /* Right-align the navigation */
 }
 
 nav ul li {
