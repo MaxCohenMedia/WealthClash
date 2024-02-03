@@ -50,6 +50,8 @@ nav ul li {
 nav ul li a {
     color: #333;
     text-decoration: none;
+    margin-right: 20px; /* Add margin to the right of the text */
+
 }
 
 .hero {
