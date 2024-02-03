@@ -14,7 +14,9 @@ header {
     border-bottom: 1px solid #ECEFF1; /* Add a shaded line at the bottom */
 
 }
-
+.sign-buttons {
+    margin-right: 20px; /* Increase the margin to create more space */
+}
 
 header img {
     max-width: 48px; /* Adjust this value to fit your design needs */
