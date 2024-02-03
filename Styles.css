@@ -22,13 +22,12 @@ header img {
 header p {
     margin: 0; /* Remove default margin for the paragraph */
     font-size: 1.5rem; /* Adjust the font size as needed */
-    flex-grow: 1; /* Allows "WealthClash" to expand and fill the remaining space */
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: flex-end; /* Right-align the navigation */
+    margin-left: auto; /* Push the navigation to the right */
 }
 
 nav ul li {
