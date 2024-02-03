@@ -7,10 +7,13 @@ body {
 header {
     display: flex;
     align-items: center;
-    padding: 0.5rem;
-    background: #333;
-    color: #fff;
+    background: #fff;
+    color: #333;
+    margin: 0; /* Removes margin */
+    border-bottom: 2px solid #ccc; /* Add a shaded line at the bottom */
+
 }
+
 
 header img {
     max-width: 48px; /* Adjust this value to fit your design needs */
