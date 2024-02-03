@@ -9,8 +9,9 @@ header {
     align-items: center;
     background: #fff;
     color: #333;
+    padding: 0; /* Removes padding */
     margin: 0; /* Removes margin */
-    border-bottom: 2px solid #ccc; /* Add a shaded line at the bottom */
+    border-bottom: 1px solid #ECEFF1; /* Add a shaded line at the bottom */
 
 }
 
