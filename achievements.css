@@ -38,8 +38,10 @@ footer {
     /* footer styles */
 }
 
-#logo {
-    max-width: 100%; /* This ensures the logo is never wider than its container */
+#logo
+header img {
+    max-width: 48px; /* Adjust this value to fit your design needs */
     height: auto; /* This keeps the aspect ratio of the logo */
-    max-height: 96px; /* Adjust this value to fit your design needs */
+    margin-right: 20px; /* Added margin for spacing */
+    margin-left: 100px;
 }
