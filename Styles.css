@@ -1,7 +1,7 @@
 /* styles.css */
 body {
     font-family: 'trebuchet ms', sans-serif;
-    line-height: 1.5;
+    line-height: 1.6;
 }
 
 header {
@@ -37,7 +37,7 @@ header .header-content {
 
 header p {
     margin: 0; /* Remove default margin for the paragraph */
-    font-size: 2rem; /* Adjust the font size as needed */
+    font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
 nav {
