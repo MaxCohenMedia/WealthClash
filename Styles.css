@@ -20,6 +20,7 @@ header img {
     max-width: 48px; /* Adjust this value to fit your design needs */
     height: auto; /* This keeps the aspect ratio of the logo */
     margin-right: 20px; /* Added margin for spacing */
+    margin-left: 200px;
 }
 
 header .header-content {
