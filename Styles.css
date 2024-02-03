@@ -31,7 +31,7 @@ header p {
 nav ul {
     list-style: none;
     display: flex;
-    text-align: right; /* Push the navigation to the right */
+    margin-left: auto; /* Right-align the navigation */
 }
 
 nav ul li {
