@@ -12,10 +12,12 @@ header {
     padding: 0; /* Removes padding */
     margin: 0; /* Removes margin */
     border-bottom: 1px solid #ECEFF1; /* Add a shaded line at the bottom */
-
 }
+
+/* Increase the margin-bottom to create more space */
 .sign-buttons {
-    margin-right: 20px; /* Increase the margin to create more space */
+    margin-right: 20px;
+    margin-bottom: 10px;
 }
 
 header img {
@@ -25,9 +27,11 @@ header img {
     margin-left: 100px;
 }
 
+/* Adjust the font size for "WealthClash" text */
 .logo-link {
     text-decoration: none; /* Remove underlining */
     color: #333; /* Adjust the text color as needed */
+    font-size: 1.5rem; /* Adjust the font size for "WealthClash" text */
 }
 
 header .header-content {
@@ -48,6 +52,7 @@ nav ul {
     list-style: none;
     display: flex;
     margin-left: auto; /* Right-align the navigation and maintain right margin */
+    /* Remove margin-left for centering the navigation */
 }
 
 nav ul li {
@@ -58,7 +63,6 @@ nav ul li a {
     color: #333;
     text-decoration: none;
     margin-right: 20px; /* Add margin to the right of the text */
-
 }
 
 .hero {
