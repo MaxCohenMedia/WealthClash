@@ -40,6 +40,7 @@ nav {
 nav ul {
     list-style: none;
     display: flex;
+    margin-left: auto; /* Right-align the navigation and maintain right margin */
 }
 
 nav ul li {
