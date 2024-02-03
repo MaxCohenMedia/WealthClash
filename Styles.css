@@ -57,6 +57,11 @@ nav ul li a {
     background: url('hero-bg.jpg') no-repeat center center/cover;
 }
 
+body {
+    display: block;
+    margin: 0; /* Remove any default margin */
+}
+
 .cta-button {
     display: inline-block;
     padding: 10px 20px;
