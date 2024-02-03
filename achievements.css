@@ -7,7 +7,13 @@ body {
 }
 
 header {
-    /* header styles */
+    display: flex;
+    align-items: center;
+    background: #fff;
+    color: #333;
+    padding: 0; /* Removes padding */
+    margin: 0; /* Removes margin */
+    border-bottom: 1px solid #ECEFF1; /* Add a shaded line at the bottom */
 }
 
 main {
@@ -38,7 +44,6 @@ footer {
     /* footer styles */
 }
 
-#logo
 header img {
     max-width: 48px; /* Adjust this value to fit your design needs */
     height: auto; /* This keeps the aspect ratio of the logo */
