@@ -1,7 +1,7 @@
 /* styles.css */
 body {
     font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    line-height: 1.5;
 }
 
 header {
@@ -27,7 +27,7 @@ header p {
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: auto; /* Push the navigation to the right */
+    text-align: right; /* Push the navigation to the right */
 }
 
 nav ul li {
