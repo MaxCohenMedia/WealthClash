@@ -23,6 +23,11 @@ header img {
     margin-left: 100px;
 }
 
+.logo-link {
+    text-decoration: none; /* Remove underlining */
+    color: #333; /* Adjust the text color as needed */
+}
+
 header .header-content {
     display: flex;
     align-items: center;
