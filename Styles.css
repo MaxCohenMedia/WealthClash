@@ -6,7 +6,6 @@ body {
 
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 1rem;
     background: #333;
@@ -14,7 +13,14 @@ header {
 }
 
 header img {
-    width: 100px;
+    max-width: 96px; /* Adjust this value to fit your design needs */
+    height: auto; /* This keeps the aspect ratio of the logo */
+    margin-right: 20px; /* Added margin for spacing */
+}
+
+header p {
+    margin: 0; /* Remove default margin for the paragraph */
+    font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
 nav ul {
@@ -56,10 +62,4 @@ footer {
     padding: 1rem;
     background: #333;
     color: #fff;
-}
-
-#logo {
-    max-width: 100%; /* This ensures the logo is never wider than its container */
-    height: auto; /* This keeps the aspect ratio of the logo */
-    max-height: 96px; /* Adjust this value to fit your design needs */
 }
