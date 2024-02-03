@@ -37,7 +37,7 @@ header .header-content {
 
 header p {
     margin: 0; /* Remove default margin for the paragraph */
-    font-size: 1.5rem; /* Adjust the font size as needed */
+    font-size: 2rem; /* Adjust the font size as needed */
 }
 
 nav {
