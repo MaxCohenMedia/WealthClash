@@ -29,7 +29,12 @@ main {
 }
 
 .achievement-category {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
     margin-bottom: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
 .achievement-list {
@@ -38,10 +43,6 @@ main {
 }
 
 .achievement li {
-    background-color: #fff;
-    border: 1px solid #ddd;
     padding: 10px;
     margin-bottom: 10px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
