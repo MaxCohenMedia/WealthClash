@@ -44,8 +44,8 @@ header p {
     font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
-nav {
-    margin-left: auto; /* Right-align the navigation */
+.center-nav {
+    margin: auto; /* center-align the navigation */
 }
 
 nav ul {
