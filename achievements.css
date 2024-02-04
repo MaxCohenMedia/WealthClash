@@ -37,6 +37,14 @@ main {
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
 }
 
+.achievement-all {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates columns that are at least 250px wide */
+    gap: 20px; /* Adds gap between grid items */
+    list-style: none; /* Removes default list styling */
+    padding: 0; /* Removes default padding */
+}
+
 .achievement-list {
     list-style-type: none;
     padding: 0;
