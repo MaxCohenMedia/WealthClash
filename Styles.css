@@ -7,24 +7,26 @@ body {
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between; /* This ensures space distribution on both sides of the nav */
     background: #fff;
     color: #333;
-    padding: 0; /* Removes padding */
-    margin: 0; /* Removes margin */
-    border-bottom: 1px solid #ECEFF1; /* Add a shaded line at the bottom */
+    padding: 0 20px; /* Adjust as needed for padding on the sides */
+    margin: 0;
+    border-bottom: 1px solid #ECEFF1;
 }
 
 /* Increase the margin-bottom to create more space */
 .sign-buttons {
     margin-right: 20px;
     margin-bottom: 20px;
+    align-items: center;
 }
 
 header img {
     max-width: 48px; /* Adjust this value to fit your design needs */
     height: auto; /* This keeps the aspect ratio of the logo */
     margin-right: 20px; /* Added margin for spacing */
-    margin-left: 100px;
+    margin-left: 10px;
 }
 
 /* Adjust the font size for "WealthClash" text */
@@ -34,47 +36,58 @@ header img {
     font-size: 1.5rem; /* Adjust the font size for "WealthClash" text */
 }
 
-header .header-content {
+.header-content,
+.sign-buttons {
+    flex-basis: 240px; /* Adjust the value to balance the visual weight */
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.center-nav {
+    flex-grow: 1;
+    justify-content: center;
+    display: flex;
+}
+
+.header-content {
     display: flex;
     align-items: center;
 }
-
 header p {
     margin: 0; /* Remove default margin for the paragraph */
     font-size: 1.5rem; /* Adjust the font size as needed */
 }
 
-.center-nav {
-    margin: auto; /* center-align the navigation */
-}
-
 nav ul {
     list-style: none;
     display: flex;
-    margin-left: auto; /* Right-align the navigation and maintain right margin */
-    /* Remove margin-left for centering the navigation */
+    padding: 0;
+    margin: 0; /* Ensures the ul doesn't have default margins */
+    align-items: center;
 }
 
+
 nav ul li {
-    margin-left: 20px;
+    margin-left: 10px;
+    margin-right: 10px; /* Add margin to the right of the text */
+
 }
 
 nav ul li a {
     color: #333;
     text-decoration: none;
-    margin-right: 20px; /* Add margin to the right of the text */
 }
 
 .hero {
     text-align: center;
     padding: 2rem;
-    background: url('hero-bg.jpg') no-repeat center center/cover;
 }
 
 body {
     display: block;
     margin: 0; /* Remove any default margin */
 }
+
 
 .cta-button {
     display: inline-block;
@@ -90,6 +103,43 @@ body {
 section {
     padding: 2rem;
 }
+
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Base style for all sections */
+section {
+    padding: 40px 20px; /* Adjusted padding for more space */
+    margin-bottom: 40px; /* Space between sections */
+    border-radius: 5px; /* Softened edges */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+}
+
+/* Specific styles for alternating section backgrounds */
+.compete-section,
+.climb-section,
+.conquer-section,
+.join-movement {
+    background-color: #ffffff; /* Base color for the first section */
+}
+
+.compete-section:nth-child(odd),
+.climb-section:nth-child(odd),
+.conquer-section:nth-child(odd),
+.join-movement:nth-child(odd) {
+    background-color: #f9f9f9; /* Light gray for odd numbered sections */
+}
+
+.compete-section:nth-child(even),
+.climb-section:nth-child(even),
+.conquer-section:nth-child(even),
+.join-movement:nth-child(even) {
+    background-color: #efefef; /* Slightly darker gray for even numbered sections */
+}
+
 
 footer {
     text-align: center;
