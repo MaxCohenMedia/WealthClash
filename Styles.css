@@ -1,46 +1,68 @@
-/* styles.css */
+/* Base Styles */
 body {
     font-family: 'trebuchet ms', sans-serif;
     line-height: 1.6;
+    margin: 0; /* Consolidated body margin reset */
 }
 
+/* Header Styles */
 header {
     display: flex;
     align-items: center;
-    justify-content: space-between; /* This ensures space distribution on both sides of the nav */
+    justify-content: space-between;
     background: #fff;
     color: #333;
-    padding: 0 20px; /* Adjust as needed for padding on the sides */
+    padding: 0 20px;
     margin: 0;
     border-bottom: 1px solid #ECEFF1;
 }
 
-/* Increase the margin-bottom to create more space */
-.sign-buttons {
-    margin-right: 20px;
-    margin-bottom: 20px;
+header img {
+    max-width: 48px;
+    height: auto;
+    margin: 10px 20px 0 10px; /* Consolidated margins */
+}
+
+.logo-link, /* Unified font styling */
+header p {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.5rem;
+}
+
+/* Navigation Styles */
+nav ul {
+    list-style: none;
+    display: flex;
+    padding: 0;
+    margin: 0;
     align-items: center;
 }
 
-header img {
-    max-width: 48px; /* Adjust this value to fit your design needs */
-    height: auto; /* This keeps the aspect ratio of the logo */
-    margin-right: 20px; /* Added margin for spacing */
-    margin-left: 10px;
+nav ul li {
+    margin: 0 10px; /* Simplified margin for list items */
 }
 
-/* Adjust the font size for "WealthClash" text */
-.logo-link {
-    text-decoration: none; /* Remove underlining */
-    color: #333; /* Adjust the text color as needed */
-    font-size: 1.5rem; /* Adjust the font size for "WealthClash" text */
+nav ul li a {
+    color: #333;
+    text-decoration: none;
 }
 
+/* Header Content & Sign Buttons Layout */
 .header-content,
 .sign-buttons {
-    flex-basis: 240px; /* Adjust the value to balance the visual weight */
+    display: flex; /* Added for .header-content to ensure flex display */
+    align-items: center;
     justify-content: center;
+    flex-basis: 240px;
     flex-shrink: 0;
+}
+
+.sign-buttons {
+    margin-bottom: 20px; /* Specific to .sign-buttons */    
+}
+.sign-buttons > * + * {
+    margin-left: 15px; /* Adds spacing between buttons */
 }
 
 .center-nav {
@@ -49,49 +71,16 @@ header img {
     display: flex;
 }
 
-.header-content {
-    display: flex;
-    align-items: center;
-}
-header p {
-    margin: 0; /* Remove default margin for the paragraph */
-    font-size: 1.5rem; /* Adjust the font size as needed */
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    padding: 0;
-    margin: 0; /* Ensures the ul doesn't have default margins */
-    align-items: center;
-}
-
-
-nav ul li {
-    margin-left: 10px;
-    margin-right: 10px; /* Add margin to the right of the text */
-
-}
-
-nav ul li a {
-    color: #333;
-    text-decoration: none;
-}
-
+/* Hero Styles */
 .hero {
     text-align: center;
     padding: 2rem;
 }
 
-body {
-    display: block;
-    margin: 0; /* Remove any default margin */
-}
-
-
+/* Call to Action Button */
 .cta-button {
     display: inline-block;
-    padding: 5px 10px; /* Adjust padding to make the buttons smaller */
+    padding: 5px 10px;
     margin-top: 20px;
     background: gold;
     color: #333;
@@ -99,48 +88,29 @@ body {
     border-radius: 5px;
 }
 
-
-section {
-    padding: 2rem;
-}
-
+/* Main Content & Section Styles */
 main {
-    width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 0px;
 }
 
-/* Base style for all sections */
 section {
-    padding: 40px 20px; /* Adjusted padding for more space */
-    margin-bottom: 40px; /* Space between sections */
-    border-radius: 5px; /* Softened edges */
-    box-shadow: 0 2px 4px rgba(0,0,0,0.05); /* Subtle shadow for depth */
+    padding: 40px 60px; /* Consolidated section padding */
+    margin-bottom: 40px;
+    border-radius: 5px;
+    background-color: #ffffff; /* Default background color */
 }
 
-/* Specific styles for alternating section backgrounds */
-.compete-section,
-.climb-section,
-.conquer-section,
-.join-movement {
-    background-color: #ffffff; /* Base color for the first section */
+/* Alternating Section Backgrounds */
+section:nth-child(odd) {
+    background-color: #f9f9f9;
 }
 
-.compete-section:nth-child(odd),
-.climb-section:nth-child(odd),
-.conquer-section:nth-child(odd),
-.join-movement:nth-child(odd) {
-    background-color: #f9f9f9; /* Light gray for odd numbered sections */
+section:nth-child(even) {
+    background-color: #efefef;
 }
 
-.compete-section:nth-child(even),
-.climb-section:nth-child(even),
-.conquer-section:nth-child(even),
-.join-movement:nth-child(even) {
-    background-color: #efefef; /* Slightly darker gray for even numbered sections */
-}
-
-
+/* Footer Styles */
 footer {
     text-align: center;
     padding: .5rem;

@@ -1,56 +1,43 @@
-/* achievements.css */
+/* Achievements Page Styles */
+
+/* Adjustments and Page-Specific Styles */
 body {
-    font-family: 'trebuchet ms', sans-serif;
-    background-color: #f4f4f4;
-    color: #333;
-    line-height: 1.6;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    background: #fff;
-    color: #333;
-    padding: 0; /* Removes padding */
-    margin: 0; /* Removes margin */
-    border-bottom: 1px solid #ECEFF1; /* Add a shaded line at the bottom */
-}
-
-/* Increase the margin-bottom to create more space */
-.sign-buttons {
-    margin-right: 20px;
-    margin-bottom: 20px;
+    background-color: #f4f4f4; /* Unique background color for achievements page */
 }
 
 main {
     width: 80%;
     margin: auto;
-    padding: 20px;
+    padding: 20px; /* Unique padding for main content area */
 }
 
+/* Achievement Categories Styling */
 .achievement-category {
-    background-color: #fff;
+    background-color: #fff; /* Matches styles.css default, could be omitted if identical */
     border: 1px solid #ddd;
     padding: 10px;
-    margin-bottom: 40px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    margin-bottom: 40px; /* Matches section style in styles.css, consider consolidating */
+    border-radius: 5px; /* Matches styles.css, could be omitted if consistent across site */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Unique box shadow for depth */
 }
 
+/* Grid Layout for Achievements */
 .achievement-all {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Creates columns that are at least 250px wide */
-    gap: 20px; /* Adds gap between grid items */
-    list-style: none; /* Removes default list styling */
-    padding: 0; /* Removes default padding */
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid setup */
+    gap: 20px; /* Space between grid items */
+    list-style: none; /* Removes default list styling, ensuring consistency */
+    padding: 0; /* Aligns with styles.css reset */
 }
 
-.achievement-list {
-    list-style-type: none;
-    padding: 0;
+/* Achievement List Styling */
+.achievement-list,
+.achievement li {
+    list-style-type: none; /* Ensures no list markers are shown */
+    padding: 0; /* Resets padding for .achievement-list */
 }
 
 .achievement li {
-    padding: 10px;
-    margin-bottom: 10px;
+    padding: 10px; /* Unique padding for list items within achievements */
+    margin-bottom: 10px; /* Space between items */
 }
