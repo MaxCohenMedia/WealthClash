@@ -86,6 +86,11 @@ nav ul li a {
     color: #333;
     text-decoration: none;
     border-radius: 5px;
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.cta-button:hover {
+    background-color: #FB8C00; /* Darker shade on hover */
 }
 
 /* Main Content & Section Styles */
