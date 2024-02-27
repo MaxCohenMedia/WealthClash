@@ -71,12 +71,6 @@ nav ul li a {
     display: flex;
 }
 
-/* Hero Styles */
-.hero {
-    text-align: center;
-    padding: 2rem;
-}
-
 /* Call to Action Button */
 .cta-button {
     display: inline-block;
@@ -106,19 +100,89 @@ section {
     background-color: #ffffff; /* Default background color */
 }
 
-/* Alternating Section Backgrounds */
-section:nth-child(odd) {
-    background-color: #f9f9f9;
-}
-
-section:nth-child(even) {
-    background-color: #efefef;
-}
-
 /* Footer Styles */
 footer {
     text-align: center;
     padding: .5rem;
     background: #333;
     color: #fff;
+}
+
+
+#hero {
+    background-image: linear-gradient(to right, #0062E6, #33AEFF); /* Replace with your preferred gradient or image */
+    color: white; /* Ensures text is readable against a darker background */
+    text-align: center; /* Centers the text */
+    padding: 100px 20px; /* Adds space inside the hero section */
+    position: relative; /* Needed if you plan to use absolute positioning for child elements */
+}
+
+.hero-content {
+    margin: 0 auto; /* Centers the content block */
+    position: relative; /* Allows for positioning of elements within */
+    padding: 20px; /* Provides spacing within the content area */
+}
+
+#hero h1 {
+    font-size: 48px; /* Large, engaging font size */
+    margin-bottom: 20px; /* Spacing between the headline and subtext */
+    font-weight: bold; /* Ensures the headline stands out */
+}
+
+#hero p {
+    font-size: 20px; /* Larger than normal text for visibility */
+    margin-bottom: 40px; /* Spacing between the subtext and the button */
+    color: #E0F7FA; /* Lighter text color for contrast but still readable */
+}
+
+.hero-button {
+    background: gold;; /* Eye-catching button color */
+    color: black; /* Text color */
+    border: none; /* Removes default button border */
+    padding: 15px 30px; /* Size of the button */
+    font-size: 18px; /* Button text size */
+    border-radius: 5px; /* Rounded corners for the button */
+    cursor: pointer; /* Changes cursor to indicate clickable */
+    transition: background-color 0.3s; /* Smooth transition for hover effect */
+}
+
+.hero-button:hover {
+    background-color: #FB8C00; /* Darker shade on hover */
+}
+
+#ccc {
+    display: flex;
+    justify-content: space-around; /* Distributes space between cards */
+    padding: 20px;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+}
+
+.ccc-card:hover {
+    transform: scale(1.05); /* Enlarges the card on hover */
+    background-color: #e0e0e0; /* Slightly darker shade when hovering */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for depth effect */
+}
+
+.ccc-image {
+    width: 100%; /* Make the image take up the full width of the card */
+    max-width: 300px; /* Maximum width to fit inside the card */
+    height: auto; /* Maintain aspect ratio */
+    border-top-left-radius: 10px; /* Round top corners to match the card */
+    border-top-right-radius: 10px;
+    box-sizing: border-box; /* Ensures padding does not affect the set width */
+}
+
+.ccc-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 500px; /* Adjust based on your content */
+    width: 400px;
+    background-color: #e9e9e9; /* Light grey background */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    margin: 10px; /* Ensures there's space between cards */
+    border-radius: 10px; /* Optional: adds rounded corners */
 }

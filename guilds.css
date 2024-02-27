@@ -6,7 +6,7 @@
 
 .guild-card:hover {
     transform: scale(1.05); /* Enlarges the card on hover */
-    background-color: #e8e8e8; /* Slightly darker shade when hovering */
+    background-color: #e0e0e0; /* Slightly darker shade when hovering */
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Larger shadow for depth effect */
 }
 
@@ -15,6 +15,8 @@
     max-width: 200px;
     height: 200px; /* set your desired height */
     object-fit: cover; /* This will cover the area without breaking the aspect ratio */
+    margin-top: 20px;
+
 }
 
 .guild-card {
@@ -25,10 +27,9 @@
     text-align: center;
     height: 300px; /* Adjust based on your content */
     width: 300px;
-    background-color: #f0f0f0; /* Light grey background */
+    background-color: #e9e9e9; /* Light grey background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    padding: 20px; /* Adjust padding as needed */
     margin: 10px; /* Ensures there's space between cards */
     border-radius: 10px; /* Optional: adds rounded corners */
 }
