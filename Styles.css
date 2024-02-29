@@ -14,13 +14,13 @@ header {
     color: #333;
     padding: 0 20px;
     margin: 0;
-    border-bottom: 1px solid #ECEFF1;
 }
 
 header img {
     max-width: 48px;
     height: auto;
-    margin: 10px 20px 0 10px; /* Consolidated margins */
+    margin: 10px 20px 0 1px; /* Consolidated margins */
+    align-items: left;
 }
 
 .logo-link, /* Unified font styling */
@@ -54,7 +54,7 @@ nav ul li a {
     display: flex; /* Added for .header-content to ensure flex display */
     align-items: center;
     justify-content: center;
-    flex-basis: 240px;
+    flex-basis: auto;
     flex-shrink: 0;
 }
 
@@ -96,7 +96,6 @@ main {
 section {
     padding: 40px 60px; /* Consolidated section padding */
     margin-bottom: 40px;
-    border-radius: 5px;
     background-color: #ffffff; /* Default background color */
 }
 
@@ -108,13 +107,13 @@ footer {
     color: #fff;
 }
 
-
 #hero {
     background-image: linear-gradient(to right, #0062E6, #33AEFF); /* Replace with your preferred gradient or image */
     color: white; /* Ensures text is readable against a darker background */
     text-align: center; /* Centers the text */
     padding: 100px 20px; /* Adds space inside the hero section */
     position: relative; /* Needed if you plan to use absolute positioning for child elements */
+    
 }
 
 .hero-content {
@@ -185,4 +184,82 @@ footer {
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
     margin: 10px; /* Ensures there's space between cards */
     border-radius: 10px; /* Optional: adds rounded corners */
+}
+
+/* Base styles for the mobile menu icon */
+.mobile-menu-icon {
+    display: none; /* Hide by default, will be displayed on mobile screens */
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 25px; /* Adjust the size of the hamburger icon */
+    width: 30px;
+    z-index: 5; /* Ensure it's above other content */
+}
+
+.mobile-menu-icon span {
+    height: 3px;
+    background-color: #333; /* Color of hamburger lines */
+}
+
+/* Media Query for mobile devices */
+@media screen and (max-width: 768px) {
+    .mobile-menu-icon {
+        display: flex; /* Show the hamburger icon */
+        justify-content: space-between; /* This should already be making your mobile menu icon align right */
+    }
+    header {
+        flex-direction: row-reverse; /* Reverses the order of elements within the header */
+        padding: 5px 20px; /* Ensure this matches the desktop version for consistent height */
+    }
+
+    .logo-link {
+        display: none; /* Hide the logo link on mobile screens */
+    }
+    header img {
+        max-width: 48px;
+        height: auto;
+    }    
+    .main-nav {
+        visibility: hidden; /* Hide the menu initially */
+        opacity: 0; /* Start fully transparent */
+        max-height: 0; /* Start with no height */
+        overflow: hidden; /* Prevent content from overflowing */
+        transition: opacity 0.5s ease, max-height 0.5s ease, visibility 0s 0.5s; /* Animate opacity and max-height, delay visibility */
+        position: absolute; /* Overlay positioning */
+        top: 65px; /* Adjust based on header height */
+        width: 100%;
+        left: 0; /* Align to the left edge */
+        background-color: #fff;
+        z-index: 2; /* Below the menu icon */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    /* Active state of the main-nav */
+    .main-nav.active {
+        visibility: visible; /* Make menu visible */
+        opacity: 1; /* Fade to fully opaque */
+        max-height: 500px; /* Set to the max height needed for your menu */
+        transition: opacity 0.5s ease, max-height 0.5s ease; /* Animate opacity and max-height */
+        width: 100%;
+    }
+
+    .main-nav ul {
+        list-style: none; /* Remove bullet points */
+        padding: 0; /* Remove default padding */
+        margin: 0; /* Remove default margin */
+        display: flex; /* Align items in a flex column */
+        flex-direction: column; /* Stack items vertically */
+    }
+
+    .main-nav ul li {
+        text-align: center; /* Center-align list items */
+        border-bottom: 1px solid #ECEFF1; /* Separator between items */
+        margin-top: 10px;
+        padding-bottom: 20px;
+    }
+    .sign-buttons {
+        display: none;
+    }
+    
 }
