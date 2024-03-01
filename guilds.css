@@ -30,7 +30,7 @@
     background-color: #e9e9e9; /* Light grey background */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
     transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
-    margin: 10px; /* Ensures there's space between cards */
+    margin: 20px; /* Ensures there's space between cards */
     border-radius: 10px; /* Optional: adds rounded corners */
 }
 
@@ -38,19 +38,16 @@
     background-image: linear-gradient(to right, #0062E6, #33AEFF); /* Replace with your preferred gradient or image */
     color: white; /* Ensures text is readable against a darker background */
     text-align: center; /* Centers the text */
-    padding: 100px 20px; /* Adds space inside the hero section */
     position: relative; /* Needed if you plan to use absolute positioning for child elements */
 }
 
 .hero-content {
     margin: 0 auto; /* Centers the content block */
     position: relative; /* Allows for positioning of elements within */
-    padding: 20px; /* Provides spacing within the content area */
 }
 
 #hero h1 {
     font-size: 48px; /* Large, engaging font size */
-    margin-bottom: 20px; /* Spacing between the headline and subtext */
     font-weight: bold; /* Ensures the headline stands out */
 }
 
