@@ -18,3 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileMenu.classList.toggle('active');
     });
 });
+
+$(document).ready(function () {
+    //go to log in page when log in button clicked
+    $('#logInButton').click(function(){
+        window.location.href = 'logIn/index.php';
+    });
+    //sign up button
+    $('#signUpButton').click(function(){
+        window.location.href = 'signUp/index.php';
+    });
+});
